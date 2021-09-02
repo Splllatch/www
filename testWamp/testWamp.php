@@ -96,6 +96,7 @@
 
 <?php include 'transport.php'; ?>
 <?php include 'ville.php'; ?>
+<?php include 'transport.php'; ?>
 
 
 

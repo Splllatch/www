@@ -7,9 +7,9 @@
 				<section class="données" >
 					<section class="detail1" class="etape"> 
 						<div class="titre">Test Trajet</div>
-						<li> <?php echo '<p>' . $ville1 . '</p>' ;  ?>	
-                            <img class="iconeTrajet" src="trajet.png"> 	<?php echo '<p>' . $ville2 . '</p>' ;  ?></li>						
-						<li><?php echo  $typeTransport ;  ?></li>
+						<li><?php echo  $ville1  ;  ?>	
+                            <img class="iconeTrajet" src="trajet.png"> 	<?php echo $ville2  ;  ?> </li>						
+						<li><?php echo  $typeTransport ;  ?> </li>
 						<li><input class="tempsEtape jour" value="<?php echo  $duree ;  ?>">jours</input></li>
 						<li><input  class="cout1" value="<?php echo  $coutBillet ;  ?>" >€ le billet</input></li>
 					</section>

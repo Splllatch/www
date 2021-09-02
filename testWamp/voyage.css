@@ -83,6 +83,12 @@ margin-top: 150px;
     width: 16vw;
     margin-top: 1vw;
     
+    
+}
+
+.route
+{
+    border : red;
 }
 
 .nourriture
