@@ -8,15 +8,15 @@
 				<div class="info">
 					<div class="tempsVille">
 						<div class="titre">Temps sur place</div>
-						<input class="tempsEtape jour" value="<?php echo  $duree  ;  ?>">jours </input>
+						<?php echo  $duree . ' ' . $unite ;  ?>
 					</div>
 					<div class="activiteVille">
 						<div class="titre">Activitées</div>
 						<div class="donneesVille2">
-							<li>Place rouge </li>
-							<li>Prendre le thé avec Vladimir</li>
-							<li></li>
-							<li>Total  <input  class="cout1" value="50" >€</input></li>
+							<li><?php echo  $listeActivitees1 ;  ?> </li>
+							<li><?php echo  $listeActivitees2 ;  ?> </li>
+							<li><?php echo  $listeActivitees3 ;  ?> </li>
+							<li>Total  <?php echo  $coutActivitees ;  ?>€</li>
 						</div>
 					</div>
 					<section class="nourriture">
@@ -26,27 +26,27 @@
 							</br>
 							<div class="total">
 							</br> Total
-							<input  class="cout2"  >€</input>
+							<?php echo  $coutNourriture . ' €';  ?>
 							</div>
 						</div>
 					</section>
 					<div class="detailVille">
 						<div class="titre">Détails</div>
-						<div class="donneesVille2"> Trois jous sur place, une visite ou deux par jour </div>
-						<input  class="cout3" value="0" >€</input>
+						<div class="donneesVille2"> <?php echo  $detailEtape ;  ?></div>
+						
 					</div>					
 					<div class="recapVille">
 						<div class="titre">Cumul des trucs</div>
-						<li>Cout étape : <block class="coutEtape"></block>€</li>
-						<li>Cumul des dépenses : <block class="cumulDepense"></block>€</li>
-						<li>Temps passé depuis le départ : <block class="tempsCumul" ></block> jours</li>
-						<li>Kilomètre parcouru : <block class="distanceCumul" ></block> km</li>
+						<li>Cout étape :  <?php echo  $coutEtape?>€</li>
+						<li>Cumul des dépenses : <?php echo  $cumulDepense?>€</li>
+						<li>Temps passé depuis le départ : <?php echo  $cumulTemps?> jours</li>
+						<li>Kilomètre parcouru : <?php echo  $cumulDistance?> km</li>
 					</div>
 				</div>
 				<section class="paysVille">
 					<div class="t11" >
 						<div  class="titrePays">Pays</div> 
-						<div class="donneesTransport">Russie</div> 
+						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
 					</div>
 				</section>
 			</section>
