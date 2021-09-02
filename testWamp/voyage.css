@@ -1,0 +1,298 @@
+﻿
+:root
+{
+    --couleurTransport: rgba(29, 85, 31, 0.7);
+    --couleurVille: rgba(114, 90, 23, 0.8);
+    --couleurDepense : rgba(59, 88, 12, 1);
+    --couleurBordure : grey ; 
+    --largeurSection : 130px;
+    --largeurCase : 130px;
+    --largeurCasePetite : 90px;
+    --largeurCaseLongue : 230px;
+}
+
+
+
+
+.transport
+{
+    height: 350px;
+    display: flex;
+    border-bottom: solid green;
+    border-radius: 2vw;
+    border-left: solid green;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+
+.numeroTransport
+{
+width: 12vw;
+text-align: center;
+margin-top: 150px;
+
+}
+
+.detail
+{
+    display: flex  ;
+    flex-wrap: wrap;
+    width: 90vw;
+
+}
+
+.iconeTrajet
+{
+
+    width: 3vw;
+}
+
+.imgTransport
+{
+    width: 38vw;
+    height: 250px;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    
+}
+
+
+
+.imgTransport.after
+{
+    width: 45vw;
+    height: 250px;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    
+}
+.données
+{
+    display: flex ;
+    flex-wrap: wrap;
+    width: 39vw;
+}
+
+
+.detail1
+{
+    width: 16vw;
+    margin-top: 1vw;
+    
+}
+
+.nourriture
+{
+    width: 11vw;
+    margin-top: 1vw;
+}
+
+.Activitées
+{
+    width: 11vw;
+    margin-top: 1vw;
+}
+
+.activiteVille
+{
+    width: 16vw;
+    margin-top: 1vw;
+}
+
+.tempsVille
+{
+    width: 11vw;
+    margin-top: 1vw;
+}
+
+.detailVille
+{
+    width: 18vw;
+    margin-top: 1vw;
+    padding-right: 1vw;
+}
+
+
+.achatBillet
+{
+    width: 11vw;
+    margin-top: 1vw;
+}
+
+
+
+
+.detailTransport
+{
+    height: 100px; 
+    width: 78vw;
+    margin-right: 1vw;
+}
+
+
+
+.visa
+{
+    width:16vw;
+}
+
+.sansVisa
+{
+    width:16vw;
+}
+
+
+
+.recapVille
+{
+    width: 20vw; 
+    margin-top: 1vw;
+}
+
+.recap
+{
+    width: 20vw; 
+}
+
+.pays
+{
+    display: flex;
+    width: 10vw;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.paysVille
+{
+    display: flex;
+    width: 10vw;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titre
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    margin-bottom: 0.3vw;
+
+   
+}
+
+section li
+{
+    margin-left: 0.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.ville
+{
+    display: flex; 
+    height: 150px;
+    border-bottom: solid var(--couleurVille);
+    border-radius: 2vw;
+    border-left: solid var(--couleurVille);
+    margin-bottom: 1vw;
+    background-color:  rgba(59, 88, 12, 0.2);
+    
+}
+
+
+.sectionTransport
+{
+    width: var(--largeurSection);
+    display: flex;
+    background-color: var(--couleurTransport);
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionVille
+{
+    width: var(--largeurSection);
+    text-align: center;
+    margin-top : 20px
+
+}
+
+
+
+.info
+{
+    
+    display: flex;
+    width : 90vw;
+}
+
+
+
+
+.titreVille
+{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+
+
+.total
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.cout , .cout1, .cout2, .cout3, .depenseJour, .tempsEtape, .coutJour
+{
+    width: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255,0);
+    text-align: right;
+    margin-right: 2px;
+    
+}
+
+
+
+
+
+
+
+.donneesTransport, .donneesVille
+{
+    text-align: center;
+}
+
+.donneesTransport2.donneesVille2
+{
+    text-align: left;
+}
+
+
+.titreCout, .cumul, .titrePays, .titreTempsCumul
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    text-align: center;
+    margin : 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
