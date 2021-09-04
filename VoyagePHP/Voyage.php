@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>    
-    <link rel="stylesheet" type="text/css" href="voyage.css">
+    <link rel="stylesheet" type="text/css" href="voyagePHP.css">
     
 
 
 </head>
 <body>
 
+<header>
+    <input  class="ajoutEtape" type="button" value="Ajout Etape" onClick="window.location.href='ajoutEtape.html'"/>
+
+</header>
+
 <?php $bdd = new PDO('mysql:host=localhost;dbname=test','root', ''); 
 
     $cumulDepense = 0;
     $cumulTemps = 0;
     $cumulDistance = 0;
+    $nbTransport = 1;
+    $nbVille = 1;
 
 
-    $reponse = $bdd->query('SELECT * FROM testtable');
+    $reponse = $bdd->query('SELECT * FROM testtable ORDER BY testtable . id');
     while ($donnees = $reponse->fetch())
     {
-         
+            $id = $donnees['id'];
             $etape = $donnees['etape'];
             $ville1 = $donnees['ville1']; 
             $ville2 = $donnees['ville2'];
@@ -52,11 +59,13 @@
             if ($etape == 'transport')
                 {
                 include 'transport.php'; 
+                $nbTransport = $nbTransport + 1;
                 }
             
-            else if ($etape == 'ville')
+            else  
             {
                 include 'ville.php';
+                $nbVille = $nbVille + 1;
             }
 
     }

@@ -1,6 +1,6 @@
 <section class="transport">						
 			<section class=numeroTransport class="etape"> 
-				Transport n°  <block class="nbTransport"></block>
+				Transport n°  <?php echo '<p>' . $nbTransport . '</p>' ;  ?><block class="nbTransport"></block>
 			</section>
 			<section class="detail">
 				<img src="Paris-Moscou.png" class="imgTransport">

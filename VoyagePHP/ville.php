@@ -1,7 +1,7 @@
 <section class="ville" class="etape"> 				
 			<div class=sectionVille> 
 				<div class="titreVille">
-					Ville n° <div class="nbEtape"></div>
+					Ville n° <?php echo '<p>' . $nbVille . '</p>' ;  ?> <div class="nbEtape"></div>
 				</div>
 				<div><?php echo '<p>' . $ville1 . '</p>' ;  ?></div>
 			</div>
