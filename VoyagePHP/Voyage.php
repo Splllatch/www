@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>    
-    <link rel="stylesheet" type="text/css" href="voyagePHP.css">
+    <link rel="stylesheet" type="text/css" href="CSS/voyagePHP.css">
     
 
 
@@ -13,7 +13,7 @@
 <body>
 
 <header>
-    <input  class="ajoutEtape" type="button" value="Ajout Etape" onClick="window.location.href='ajoutEtape.html'"/>
+    <input  class="ajoutEtape" type="button" value="Ajout Etape" onClick="window.location.href='ajoutEtape.php'"/>
 
 </header>
 

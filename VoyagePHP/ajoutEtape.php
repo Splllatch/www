@@ -11,11 +11,13 @@
 		<h1>Ajouter une étape :</h1>
 		<form method="post" action="TransfertBDD.php">
 
-			<label>Etape<br></label>
 			 <input type="radio" name="etape" value="transport" />Transport<br>
-			 <input type="radio" name="etape" value="ville" />Ville<br>			
+			 <input type="radio" name="etape" value="ville" />Ville<br>		
+			 
 
-			<label>Ville départ</label> <input type="text" name="ville1">
+			 
+
+			<label >Ville départ</label> <input type="text"  name="ville1" >
 			<label>Ville arrivée</label> <input type="text" name="ville2">
 			<label>Type de transport</label> <input type="text" name="typeTransport">
 			<label>Temps</label> <input type="text" name="duree">
@@ -39,6 +41,8 @@
 			<label>Détails de l'étape</label> <input type="text" name="detailEtape">
 
 			<input type="submit" value="Ajouter" >
+
+			
 		</form>
 	</body> 
 </html>
