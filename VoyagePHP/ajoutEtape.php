@@ -13,57 +13,89 @@
 		<h1>Ajouter une étape :</h1>
 		<form method="post" action="TransfertBDD.php">
 
-			 <input type="radio" name="etape" value="transport" />Transport<br>
-			 <input type="radio" name="etape" value="ville" />Ville<br>		
+			 <input id="transport" type="radio" name="etape" value="transport" />Transport<br>
+			 <input id="ville" type="radio" name="etape" value="ville" />Ville<br>		
 			 
 
+			<div class=trajet>
+				<div  id="ville1">
+				<label >Ville de départ :</label> </br> <input type="text"  name="ville1" class="caseVille">
+				</div>
+
+				<img id="iconeTrajet" src="trajet.png">
+
+				<div class="transport" id="ville2">
+				<label>Ville d'arrivée : </label> <input type="text" name="ville2" class="caseVille" value="">
+				</div>
+			</div>	
+
+
+			
+			<div class="transport" id="typeTransport">
+			<label>Type de transport</label> 
+				<select name="typeTransport" class="caseTransport">
+					<option  value="Train">Train</option>
+					<option  value="Bus">Bus</option>
+					<option  value="Avion">Avion</option>
+					<option  value="Bateau">Bateau</option>
+					<option  value="Taxi">Taxi</option>
+				</select>
+
+			</div>
+			</div>
+			
+			<div  id="duree">
+			<label>Temps</label> <input type="text" name="duree" id="caseDuree" value= 0 >
 			 
-
-			<label >Ville départ</label> <input type="text"  name="ville1">
-
-			<div class="transport">
-			<label>Ville arrivée</label> <input type="text" name="ville2">
-			</div>
 			
-			<div class="transport">
-			<label>Type de transport</label> <input type="text" name="typeTransport">
-			</div>
-			
-			<label>Temps</label> <input type="text" name="duree">
-			<label>Unité (jours ou heures)<br></label> 
 
-			<input type="radio" name="unite" value="jours" />jours<br>
+			<input type="radio" name="unite" value="jours" checked="checked" />jours<br>
 			<input type="radio" name="unite" value="heures" />heures<br>
-
-			<div class="transport">
-			<label>Cout du billet</label> <input type="text" name="coutBillet">	
-			</div>
-			
-			<label>Cout journalier du pays</label> <input type="text" name="coutPays">
-
-			<div class="ville">
-			<label>Activitée 1</label> <input type="text" name="listeActivitees1">
-			<label>Activitée 2</label> <input type="text" name="listeActivitees2">
-			<label>Activitée 3</label> <input type="text" name="listeActivitees3">
-			<label>Cout des activitées</label> <input type="text" name="coutActivitees">
 			</div>
 
-			<div class="transport">
-			<label>Visa 1</label> <input type="text" name="listeVisa1">
-			<label>Visa 2</label> <input type="text" name="listeVisa2">
-			<label>Visa 3</label> <input type="text" name="listeVisa3">
-			<label>Cout des visa</label> <input type="text" name="coutVisa">
+			<div class="transport" id="coutBillet">
+			<label>Cout du billet</label> <input type="text" name="coutBillet" id="caseCoutBillet" value=0><label>€</label>
 			</div>
 
-			<label>Pays</label> <input type="text" name="pays">
-
-			<div class="transport">
-			<label>Détails achat billet</label> <input type="text" name="detailAchat">
+			<div class="transport" id="detailBillet">
+			<label>Détails achat billet :</label> <input type="text" name="detailAchat" class="caseDetail" value="">
 			</div>
 
-			<label>Détails de l'étape</label> <input type="text" name="detailEtape">
+			<div id="sectionPays">
+				<div  id="pays">
+				<label>Pays :</label> <input type="text" name="pays" class="casePays" value="">
+				</div>
+				
+				<div  id="coutPays">
+				<label>Cout journalier du pays</label> <input type="text" name="coutPays" id="caseCoutPays" value=0><label>€</label>
+				</div>
+			</div>
 
+			<div class="ville" id="activitee">
+			<label>Activitée 1</label> <input type="text" name="listeActivitees1" class="listeActivitee" value="">
+			<label>Activitée 2</label> <input type="text" name="listeActivitees2" class="listeActivitee" value="">
+			<label>Activitée 3</label> <input type="text" name="listeActivitees3" class="listeActivitee" value="">
+			<label>Cout des activitées</label> <input type="text" name="coutActivitees" id="caseCoutActivitees" value=0><label>€</label>
+			</div>
+
+			<div class="transport" id="visa">
+			<label>Visa 1 : </label> <input type="text" name="listeVisa1" class="listeVisa" value="">
+			<label>Visa 2 : </label> <input type="text" name="listeVisa2" class="listeVisa" value="">
+			<label>Visa 3 : </label> <input type="text" name="listeVisa3" class="listeVisa" value="">
+			<label>Cout des visas</label> <input type="text" name="coutVisa" id="caseCoutVisa" value= '0'><label>€</label>
+			</div>
+
+
+
+
+
+			<div  id="detailEtape">
+			<label>Détails de l'étape :</label> <input type="text" name="detailEtape" class="caseDetail" value="">
+			</div>
+
+			<div  id="ajouter">
 			<input type="submit" value="Ajouter" >
+			</div>
 
 			
 		</form>

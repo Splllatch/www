@@ -1,6 +1,6 @@
 <section class="transport">						
 			<section class=numeroTransport class="etape"> 
-				Transport n°  <?php echo '<p>' . $nbTransport . '</p>' ;  ?><block class="nbTransport"></block>
+				Transport n°  <?php echo  $nbTransport  ;  ?>
 			</section>
 			<section class="detail">
 				<img src="Paris-Moscou.png" class="imgTransport">
@@ -50,10 +50,14 @@
 					<div class="donneesTransport2" ><?php echo  $detailEtape ;  ?></div>
 				</section>
 			</section>
-			<section class="pays">
-				<div class="t11" >
-					<div  class="titrePays">Pays</div> 
-					<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
-				</div>
-			</section>
+			<div>
+				
+				<section class="pays">
+					<div class="t11" >					
+						<div  class="titrePays">Pays</div> 
+						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
+						<input  class="modifeEtape" type="button" value="Modifier" onClick="window.location.href='ajoutEtape.php'"/>
+					</div>
+				</section>
+			</div>
 		</section>

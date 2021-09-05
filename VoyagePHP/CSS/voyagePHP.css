@@ -17,12 +17,19 @@
     width : 100px;
 }
 
+.modifeEtape
+{
+    height : 40px;
+    width : 70px;
+    margin-top: 20px;
+}
+
 
 .transport
 {
     height: 350px;
     display: flex;
-    border-bottom: solid blue;
+    border-bottom: solid green;
     border-radius: 2vw;
     border-left: solid green;
     padding-top: 1vw;
@@ -37,6 +44,13 @@ width: 12vw;
 text-align: center;
 margin-top: 150px;
 
+}
+
+.numeroVille
+{
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
 }
 
 .detail
@@ -173,16 +187,8 @@ margin-top: 150px;
     display: flex;
     width: 10vw;
     text-align: center;
-    margin-top: 100px;
 }
 
-.paysVille
-{
-    display: flex;
-    width: 10vw;
-    text-align: center;
-    margin-top: 50px;
-}
 
 .titre
 {
@@ -241,12 +247,7 @@ section li
 
 
 
-.titreVille
-{
-    display: flex; 
-    justify-content: center; 
-    margin-top: 40px;
-}
+
 
 
 

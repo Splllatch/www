@@ -1,7 +1,7 @@
 <section class="ville" class="etape"> 				
 			<div class=sectionVille> 
-				<div class="titreVille">
-					Ville n° <?php echo '<p>' . $nbVille . '</p>' ;  ?> <div class="nbEtape"></div>
+				<div class="numeroVille">
+					Ville n° <?php echo  $nbVille  ;  ?>
 				</div>
 				<div><?php echo '<p>' . $ville1 . '</p>' ;  ?></div>
 			</div>
@@ -43,10 +43,11 @@
 						<li>Kilomètre parcouru : <?php echo  $cumulDistance?> km</li>
 					</div>
 				</div>
-				<section class="paysVille">
+				<section class="pays">
 					<div class="t11" >
 						<div  class="titrePays">Pays</div> 
 						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
+						<input  class="modifeEtape" type="button" value="Modifier" onClick="window.location.href='ajoutEtape.php'"/>
 					</div>
 				</section>
 			</section>
