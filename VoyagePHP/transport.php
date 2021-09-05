@@ -20,7 +20,7 @@
 							</br>
 							<div class="total">
 							</br> Total
-							<?php echo  $coutNourriture . ' €';  ?>
+							<?php echo  $coutNourriture . ' €'; ?>
 							</div>
 						</div>
 					</section>
