@@ -47,7 +47,7 @@
 					<div class="t11" >
 						<div  class="titrePays">Pays</div> 
 						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
-						<input  class="modifeEtape" type="button" value="Modifier" onClick="window.location.href='ajoutEtape.php'"/>
+						<input  class="modifeEtape" type="button" value="Modifier" onClick="window.location.href='modifEtape.php'"/>
 					</div>
 				</section>
 			</section>

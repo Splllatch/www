@@ -26,6 +26,8 @@
     $nbVille = 1;
 
 
+
+
     $reponse = $bdd->query('SELECT * FROM testtable ORDER BY testtable . id');
     while ($donnees = $reponse->fetch())
     {
