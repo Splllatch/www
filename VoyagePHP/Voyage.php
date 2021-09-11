@@ -52,11 +52,11 @@
             $detailAchat = $donnees['detailAchat'];
             $detailEtape = $donnees['detailEtape'];
             $coutNourriture = $coutPays * $duree;
-            $coutEtape = $coutBillet + $coutNourriture + $coutVisa  ;
-            $cumulDepense = $cumulDepense + $coutEtape;
+            $coutEtape = $coutBillet + $coutNourriture + $coutVisa + $coutActivitees ;
+            $cumulDepense = $cumulDepense + $coutEtape ;
             $cumulTemps = 0;
             $cumulDistance = 0;
-
+           
 
             if ($etape == 'transport')
                 {
@@ -71,18 +71,7 @@
             }
 
     }
-?>
-
-
-
-
-
-
-
-
-
-
-
+    ?>
 
 </body>
 </html>

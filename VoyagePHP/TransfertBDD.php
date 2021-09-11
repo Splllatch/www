@@ -12,8 +12,6 @@
 			$dbco = new PDO ('mysql:host=localhost;dbname=test','root', '');
 			   //On définit le mode d'erreur de PDO sur Exception
 			   $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			   echo 'connecté';
-
 
 			   $sth = $dbco->prepare("
 			   INSERT INTO testtable(  etape, ville1, ville2, typeTransport, duree, unite, 
@@ -58,6 +56,6 @@
 		
 		?>
 
-			<input  class="annuler" type="button" value="Annuler" onClick="window.location.href='Voyage.php'"/>
+			<input  class="retour" type="button" value="Retour" onClick="window.location.href='Voyage.php'"/>
 	</body> 
 </html>
