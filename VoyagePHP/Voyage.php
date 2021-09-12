@@ -17,6 +17,8 @@
 
 </header>
 
+<div class="enTete"></div>
+
 <?php $bdd = new PDO('mysql:host=localhost;dbname=test','root', ''); 
 
     $cumulDepense = 0;
@@ -37,6 +39,7 @@
             $ville2 = $donnees['ville2'];
             $typeTransport =$donnees['typeTransport'];
             $duree = $donnees['duree'];
+            $dureeConvert = $donnees['dureeConvert'];
             $unite = $donnees['unite']; 
             $coutBillet = $donnees['coutBillet'];
             $coutPays = $donnees['coutPays'];
@@ -54,7 +57,7 @@
             $coutNourriture = $coutPays * $duree;
             $coutEtape = $coutBillet + $coutNourriture + $coutVisa + $coutActivitees ;
             $cumulDepense = $cumulDepense + $coutEtape ;
-            $cumulTemps = 0;
+            $cumulTemps = $cumulTemps + $dureeConvert;
             $cumulDistance = 0;
            
 

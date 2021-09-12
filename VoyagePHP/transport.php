@@ -1,11 +1,20 @@
+<head>
+<link rel="stylesheet"  href="CSS/transport.css">
+</head>
+
+
+
 <section class="transport">						
-			<section class=numeroTransport class="etape"> 
+			<div class=numeroTransport class="etape"> 
 				Transport n°  <?php echo  $nbTransport  ;  ?>
-			</section>
-			<section class="detail">
+			</div>
+
+			<div class="detail">
 				<img src="Paris-Moscou.png" class="imgTransport">
-				<section class="données" >
-					<section class="detail1" class="etape"> 
+
+				<section class="infoTransport" >
+
+					<section class="detailTransport" class="etape"> 
 						<div class="titre">Test Trajet</div>
 						<li class="ville1">  <?php echo  $ville1  ;  ?>	
                             <img class="iconeTrajet" src="trajet.png"> 	<?php echo $ville2  ;  ?> </li>						
@@ -13,7 +22,8 @@
 						<li><?php echo  $duree . ' ' . $unite;  ?></li>
 						<li> <?php echo  $coutBillet ;  ?>€ le billet</input></li>
 					</section>
-					<section class="nourriture">
+
+					<section class="nourritureTransport">
 						<div class="titre">Nourriture</div>
 						<div>
 							<input  class="coutJour" value="<?php echo  $coutPays ;  ?>" >€ par jour</input>
@@ -24,10 +34,12 @@
 							</div>
 						</div>
 					</section>
+
 					<section class="achatBillet">
 						<div class="titre">Ou acheter le billet ?</div>
 						<div><?php echo  $detailAchat;  ?></div>
 					</section>
+
 					<div class="visa">
 						<div class="titre">Visa</div>
 						<div class="donneesTransport2" >
@@ -37,6 +49,7 @@
 							<li>Total visa = <?php echo  $coutVisa;  ?>€</li>
 						</div>		
 					</div>
+
 					<div class="recap">
 						<div class="titre">Cumul des trucs</div>
 						<li>Cout étape : <?php echo  $coutEtape?>€</li>
@@ -44,21 +57,24 @@
 						<li>Temps passé depuis le départ : <?php echo  $cumulTemps?> jours</li>
 						<li>Kilomètre parcouru : <?php echo  $cumulDistance?> km</li>
 					</div>
+
 				</section>
+
 				<section class="detailTransport">
 					<div class="titre">Détails</div>
 					<div class="donneesTransport2" ><?php echo  $detailEtape ;  ?></div>
 				</section>
-			</section>
-			<div>
+			</div>
+
+			
 				
-				<section class="pays">
-					<div class="t11" >					
+				<section class="paysTransport">					
 						<div  class="titrePays">Pays</div> 
 						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
-<<<<<<< HEAD
-						<form method="post" action="modifEtape.php">
+				</section>
 
+				<section class="boutonTransport">
+					<form method="post" action="modifEtape.php">
 						<input name="id" value="<?php echo $id ?>" type="hidden">
 						<input name="etape" value="<?php echo $etape ?>" type="hidden">
 						<input name="ville1" value="<?php echo $ville1 ?>" type="hidden">
@@ -87,12 +103,8 @@
 						<input name="id" value="<?php echo $id ?>" type="hidden">
 						<input class="boutonSupr"  type="submit" value="Supprimer" >
 						</form>
-=======
-						<input  class="bouttonModif" type="button" value="Modifier" onClick="window.location.href='modifEtape.php'"/>
->>>>>>> 92177550351f31c403cefbaf44f314f07cdb4905
-					</div>
 				</section>
-			</div>
+			
 		</section>
 
 

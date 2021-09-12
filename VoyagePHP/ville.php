@@ -1,4 +1,6 @@
-
+<head>
+<link rel="stylesheet"  href="CSS/ville.css">
+</head>
 
 <section class="ville" class="etape"> 				
 			<div class=sectionVille> 
@@ -8,7 +10,7 @@
 
 				<div ><?php echo '<p>' . $ville1 . '</p>' ;  ?></div>
 			</div>
-				<div class="info">
+				<div class="infoVille">
 					<div class="tempsVille">
 						<div class="titre">Temps sur place</div>
 						<?php echo  $duree . ' ' . $unite ;  ?>
@@ -22,7 +24,7 @@
 							<li>Total  <?php echo  $coutActivitees ;  ?>€</li>
 						</div>
 					</div>
-					<section class="nourriture">
+					<section class="nourritureVille">
 						<div class="titre">Nourriture</div>
 						<div>
 							<input  class="coutJour" value="<?php echo  $coutPays ;  ?>" >€ par jour</input>
@@ -46,12 +48,13 @@
 						<li>Kilomètre parcouru : <?php echo  $cumulDistance?> km</li>
 					</div>
 				</div>
-				<section class="pays">
-					<div class="t11" >
+				<section class="paysVille">
 						<div  class="titrePays">Pays</div> 
 						<div class="donneesTransport"><?php echo  $pays ;  ?></div> 
-<<<<<<< HEAD
-						
+				</section>		
+
+				<section class="boutonVille">
+
 						<form method="post" action="modifEtape.php">
 
 						<input name="id" value="<?php echo $id ?>" type="hidden">
@@ -75,11 +78,8 @@
 						<input name="id" value="<?php echo $id ?>" type="hidden">
 						<input class="boutonSupr"  type="submit" value="Supprimer" >
 						</form>
-=======
-						<input  class="modifeEtape" type="button" value="Modifier" onClick="window.location.href='modifEtape.php'"/>
->>>>>>> 92177550351f31c403cefbaf44f314f07cdb4905
-					</div>
 				</section>
+
 			</section>
 
 

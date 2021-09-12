@@ -6,6 +6,16 @@
 	<body>
 
 		<?php
+
+	$dureeConvert = $_POST['duree'];
+	$unite = $_POST['unite'];
+
+	if ($unite == 'heures')
+	{
+		$dureeConvert = $dureeConvert / 24;
+	}
+
+
  
 		try{
 			
@@ -14,10 +24,10 @@
 			   $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			   $sth = $dbco->prepare("
-			   INSERT INTO testtable(  etape, ville1, ville2, typeTransport, duree, unite, 
+			   INSERT INTO testtable(  etape, ville1, ville2, typeTransport, duree, dureeConvert, unite, 
 			   coutBillet, coutPays, listeActivitees1, listeActivitees2, listeActivitees3, coutActivitees, listeVisa1, listeVisa2, listeVisa3, 
 			   coutVisa, pays, detailAchat, detailEtape)
-			   VALUES (  :etape, :ville1, :ville2, :typeTransport, :duree, :unite, 
+			   VALUES (  :etape, :ville1, :ville2, :typeTransport, :duree, :dureeConvert, :unite, 
 			   :coutBillet, :coutPays, :listeActivitees1, :listeActivitees2, :listeActivitees3, :coutActivitees, :listeVisa1, :listeVisa2, :listeVisa3, 
 			   :coutVisa, :pays, :detailAchat, :detailEtape)  ");
 
@@ -28,6 +38,7 @@
 				':ville2' =>  $_POST['ville2'],
 				':typeTransport' => $_POST['typeTransport'], 
 				':duree' =>	$_POST['duree'], 
+				':dureeConvert' =>	$dureeConvert,
 				':unite' =>	$_POST['unite'], 
 				':coutBillet' =>  $_POST['coutBillet'], 
 				':coutPays' =>	 $_POST['coutPays'], 

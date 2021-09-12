@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 92177550351f31c403cefbaf44f314f07cdb4905
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet"  href="CSS/ajoutEtape.css">
-<<<<<<< HEAD
 		<script src="JS/modifEtape.js" defer></script>
 	</head>
 	<body>
@@ -132,22 +127,3 @@ $pays = isset($_POST['pays']) ? $_POST['pays'] : NULL;
 		</form>
 	</body> 
 </html>
-=======
-		<script src="JS/modifEtape.js"></script>
-	</head>
-
-	<body>
-	Page de test
-
-	<div id="TEST"></div>
-
-	wesh
-
-
- 
-
-
-	</body> 
-</html>
-
->>>>>>> 92177550351f31c403cefbaf44f314f07cdb4905

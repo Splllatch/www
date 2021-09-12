@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const ville2 = document.getElementById("ville2");
 const typeTransport = document.getElementById("typeTransport");
 const coutBillet = document.getElementById("coutBillet");
@@ -46,6 +45,7 @@ ville.onclick = () => villeForm();
         ajouter.style.display = 'flex'
         iconeFleche.style.display = 'flex'
         activitee.style.display = 'none'
+        document.getElementById("ville").checked == false
 
     }
 
@@ -65,36 +65,7 @@ ville.onclick = () => villeForm();
         pays.style.display = 'flex'
         detailEtape.style.display = 'flex'
         modifier.style.display = 'flex'
+        document.getElementById("transport").checked == false
     }
 
     
-=======
-
-var bouttonModif = document.getElementsByClassName('bouttonModif');
-var ville1 = document.getElementsByClassName('ville1');
-var TEST = document.getElementById('TEST');
-
-
-
-
-bouttonModif.onclick = () => depart();
-
-function depart()
-{
-
-    TEST.innerHTML = ville1.value 
-    console.log(TEST)
-    
-}
-
-
-
-
-
-  
-
-    
-
-
-
->>>>>>> 92177550351f31c403cefbaf44f314f07cdb4905

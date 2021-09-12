@@ -1,0 +1,195 @@
+﻿
+
+
+body{
+    width : 100%;
+}
+
+
+
+.boutonModif
+    
+    {
+        height : 30px;
+        width : 80px;
+        border-radius: 5px;
+        border : solid thin;
+        border-bottom-color: #42a142;
+        border-color: #4cb64c;
+        background: #5ebd5e;
+        background-image: linear-gradient(to bottom,#62be62 0,#4cb64c 100%);
+        background-repeat: repeat-x;
+        color: #ffff;
+    }
+
+    .boutonModif:hover
+{
+    background-image: linear-gradient(to bottom,#529b52 0,#398539 100%);
+}
+
+
+    .boutonSupr
+    {
+        
+        height : 30px;
+        width : 80px;
+        border-radius: 5px;
+        border : solid thin;
+        border-bottom-color: #7e0c0c;
+        border-color: #e92c2c;
+        background-image: linear-gradient(to bottom,#f24141 0,#f24141 100%);
+        background-repeat: repeat-x;
+        color: #ffff;
+        margin-top : 40px;
+    }
+
+    .boutonSupr:hover
+    {
+        background-image: linear-gradient(to bottom,#a72e2e 0,#c93535 100%);
+       
+    }
+
+    .boutonVille{
+    
+        margin-top: 2vw;
+        width: 4vw;
+        height: 100%;
+    
+    }
+   
+
+.numeroVille
+{
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+
+
+.activiteVille
+{
+    width: 16vw;
+    margin-top: 1vw;
+}
+
+.tempsVille
+{
+    width: 11vw;
+    margin-top: 1vw;
+}
+
+.detailVille
+{
+    width: 14vw;
+    margin-top: 1vw;
+    padding-right: 1vw;
+}
+
+.recapVille
+{
+    width: 18vw; 
+    margin-top: 1vw;
+}
+
+
+
+.paysVille
+{
+    width: 7vw;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.titre
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    margin-bottom: 0.3vw;
+}
+
+.nourritureVille
+{
+    width: 8vw;
+    padding-top: 1vw;
+    
+}
+
+
+section li
+{
+    margin-left: 0.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.ville
+{
+    display: flex; 
+    height: 150px;
+    border-bottom: solid var(--couleurVille);
+    border-radius: 2vw;
+    border-left: solid var(--couleurVille);
+    margin-bottom: 1vw;
+    background-color:  rgba(59, 88, 12, 0.2);
+    
+}
+
+.sectionVille
+{
+    text-align: center;
+    margin-top : 20px;
+    width : 8vw;
+
+}
+
+
+.infoVille
+{
+    
+    display: flex;
+    width : 75vw;
+}
+
+
+.cout , .cout1, .cout2, .cout3, .depenseJour, .tempsEtape, .coutJour
+{
+    width: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255,0);
+    text-align: right;
+    margin-right: 2px;
+    
+}
+
+ .donneesVille
+{
+    text-align: center;
+}
+
+.donneesVille2
+{
+    text-align: left;
+}
+
+
+.titreCout, .cumul, .titrePays, .titreTempsCumul
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

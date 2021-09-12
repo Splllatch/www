@@ -1,0 +1,226 @@
+﻿
+
+
+body{
+    width : 100%;
+}
+
+
+.boutonModif
+    
+    {
+        height : 30px;
+        width : 80px;
+        border-radius: 5px;
+        border : solid thin;
+        border-bottom-color: #42a142;
+        border-color: #4cb64c;
+        background: #5ebd5e;
+        background-image: linear-gradient(to bottom,#62be62 0,#4cb64c 100%);
+        background-repeat: repeat-x;
+        color: #ffff;
+    }
+
+    .boutonModif:hover
+{
+    background-image: linear-gradient(to bottom,#529b52 0,#398539 100%);
+}
+
+
+    .boutonSupr
+    {
+        
+        height : 30px;
+        width : 80px;
+        border-radius: 5px;
+        border : solid thin;
+        border-bottom-color: #7e0c0c;
+        border-color: #e92c2c;
+        background-image: linear-gradient(to bottom,#f24141 0,#f24141 100%);
+        background-repeat: repeat-x;
+        color: #ffff;
+        margin-top : 40px;
+    }
+
+    .boutonSupr:hover
+    {
+        background-image: linear-gradient(to bottom,#a72e2e 0,#c93535 100%);
+       
+    }
+   
+
+.boutonTransport{
+    
+    margin-top: 5vw;
+    width: 4vw;
+    height: 100%;
+
+}
+
+.paysTransport
+{
+    width: 7vw;
+    text-align: center;
+    height: 100%;
+    
+
+}
+
+
+
+.transport
+{
+    height: 350px;
+    display: flex;
+    border-bottom: solid green;
+    border-radius: 2vw;
+    border-left: solid green;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+
+.numeroTransport
+{
+width: 10vw;
+text-align: center;
+margin-top: 150px;
+
+}
+
+
+.detail
+{
+    display: flex  ;
+    flex-wrap: wrap;
+    width: 73vw;
+
+}
+
+.iconeTrajet
+{
+
+    width: 3vw;
+}
+
+.imgTransport
+{
+    width: 38vw;
+    height: 250px;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    
+}
+
+
+
+.imgTransport.after
+{
+    width: 45vw;
+    height: 250px;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    
+}
+.infoTransport
+{
+    display: flex ;
+    flex-wrap: wrap;
+    width: 34vw;
+}
+
+
+
+
+
+.nourritureTransport
+{
+    width: 8vw;
+    margin-left: 4vw;
+}
+
+
+.achatBillet
+{
+    width: 7vw;
+}
+
+.visas
+{
+    width:16vw;
+}
+
+.recap
+{
+    width: 18vw; 
+    margin-left: 5vw;
+}
+
+.titre
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    margin-bottom: 0.3vw;
+
+   
+}
+
+section li
+{
+    margin-left: 0.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.sectionTransport
+{
+    width: var(--largeurSection);
+    display: flex;
+    background-color: var(--couleurTransport);
+    align-items: center;
+    justify-content: center;
+}
+
+.info
+{
+    
+    display: flex;
+    width : 90vw;
+}
+
+
+
+
+
+ .coutJour
+{
+    width: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255,0);
+    text-align: right;
+    margin-right: 2px;
+}
+
+
+.donneesTransport
+{
+    text-align: center;
+    height: 50px;
+}
+
+.donneesTransport2
+{
+    text-align: left;
+}
+
+
+.titreCout, .cumul, .titrePays, .titreTempsCumul
+{
+    color : var(--couleurDepense);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
+    height: 20px;
+}
